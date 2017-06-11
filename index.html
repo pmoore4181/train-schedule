@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Train Schedule</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- Firebase script link -->
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-
 </head>
 
 <body>
@@ -42,59 +44,39 @@
                             <td id="nextArrival-1">f</td>
                             <td id="minutesAway-1">f</td>
                         </tr>
-                        <tr class="trainRow" id="trainRow-2">
-                            <td id="trainName-2">Second Train</td>
-                            <td id="trainDestination-2">Mars</td>
-                            <td id="trainFrequency-2">42</td>
-                            <td id="nextArrival-2">f</td>
-                            <td id="minutesAway-2">f</td>
-                        </tr> -->
+                        -->
                     </tbody>
                 </table>
             </div>
         </div>
-
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Add Train</h3>
             </div>
             <div class="panel-body">
                 <form>
-                  <div class="form-group">
-                    <label for="train-name">Train Name</label>
-                    <input type="text" class="form-control" id="addTrainName" >
-                  </div>
-                  <div class="form-group">
-                    <label for="train-destination">Destination</label>
-                    <input type="text" class="form-control" id="addTrainDestination" >
-                  </div>
-                  <div class="form-group">
-                    <label for="first-train-time">First Train Time</label>
-                    <input type="time" class="form-control" id="firstTrainTime" >
-                  </div>
-                  <div class="form-group">
-                    <label for="train-frequency">Frequency (min)</label>
-                    <input type="number" class="form-control" id="addTrainFrequency" >
-                  </div>
-                  <button type="submit" class="btn btn-default" id="addTrain">Submit</button>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="addTrainName">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-destination">Destination</label>
+                        <input type="text" class="form-control" id="addTrainDestination">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-train-time">First Train Time (Military Time)</label>
+                        <input type="text" class="form-control" id="firstTrainTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-frequency">Frequency (min)</label>
+                        <input type="number" class="form-control" id="addTrainFrequency">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="addTrain">Submit</button>
                 </form>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>  <!-- closing container div -->
+    </div>
+    <!-- closing container div -->
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- project js file -->
